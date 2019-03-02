@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    
+
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1200px;
+    font-family: 'Merriweather', serif;
+}
+
+.title {
+    background-color: rgb(36, 32, 32);
+    color: white;
+}
+
+h1,h2 {
+    margin: 0;
+    padding: 20px;
+}
+
+h1 .titletext {
+    text-decoration: none;
+    transition: 0.15s ease-in-out;
+    font-size: 46px;
+}
+
+h1 .titletext:hover {
+    color: rgb(200, 200, 221);
+}
+
+.postcontainer {
+
+}
+
+.post {
+    margin: 50px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.18);
+    transition: 0.15s ease-in-out;
+}
+
+.post:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.18);
+}
