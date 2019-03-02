@@ -1,7 +1,16 @@
 <html>
     <body>
-        <h1>Welcome to my blog</h1>
-        <h2>Django Girls is awesome.</h2>
-        <p>This post list page is working!</p>
+        <div>
+            <h1><a href="/">Django Girls Blog</a></h1>
+            <h2>Because Django Girls is awesome.</h2>
+        </div>
+        
+        {% for post in posts %}
+            <div>
+                <p>published: {{ post.published_date }}</p>
+                <h2><a href="">{{ post.title }}</a></h2>
+                <p>{{ post.text|linebreaksbr }}</p>
+            </div>
+        {% endfor %}
     </body>
 </html>
